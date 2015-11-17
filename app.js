@@ -1,5 +1,5 @@
 // MODULE DEPENDANCIES
-var express = require('expres'),
+var express = require('express'),
   routes = require('./routes'),
   http = require('http');
 
