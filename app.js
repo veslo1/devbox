@@ -1,6 +1,5 @@
 // MODULE DEPENDANCIES
 var express = require('express'),
-  routes = require('./routes'),
   http = require('http');
 
 // TEMPLATE ENGINE
