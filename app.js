@@ -11,8 +11,8 @@ var users = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'html');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -46,15 +46,12 @@ if (app.get('env') === 'development') {
   });
 }
 
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
+// EXPRESS ROUTING
+// NAVIGATION - INDEX
+app.get('/', function(req, res) {
+  res.render('index.html', {
   });
-});
+})
 
 
 var server = app.listen(80, function () {
