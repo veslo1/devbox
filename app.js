@@ -11,19 +11,11 @@ var Server = require('mongodb').Server;
 
 // EXPRESS VARIABLES
 var app = express();
-app.configure(function(){
-  app.set('port', process.env.PORT || 80);
-  app.use(express.favicon());
-  app.use(express.loger('dev'));
-  app.use(express.bodyParser());
-  app.use(express.cookieParser());
-  app.use(express.methodOverride());
-  app.use(app.router);
-  app.use(express.static(__dirname + '/public'));
-  app.engine('html', require('hbs').__express);
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'html');
-});
+app.set('port', process.env.PORT || 80);
+app.use(express.static('/public'));
+app.engine('html', require('hbs').__express);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'html');
 
 app.configure('development', function() {
   app.use(express.errorHandler());
