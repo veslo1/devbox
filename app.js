@@ -17,10 +17,6 @@ app.engine('html', require('hbs').__express);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
-app.configure('development', function() {
-  app.use(express.errorHandler());
-});
-
 // ROUTING
 app.get('/', function(req, res) {
   res.render('index.html', {
