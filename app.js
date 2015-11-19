@@ -11,7 +11,7 @@ var Server = require('mongodb').Server;
 
 // EXPRESS VARIABLES
 var app = express();
-app.configure(function() {
+app.configure(function(){
   app.set('port', process.env.PORT || 80);
   app.use(express.favicon());
   app.use(express.loger('dev'));
