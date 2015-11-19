@@ -22,11 +22,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('html', require('hbs').__express);
-app.set('views', __dirname + '/views');
+// app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
-app.use('/', routes);
-app.use('/users', users);
+// app.use('/', routes);
+// app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
