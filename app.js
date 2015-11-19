@@ -5,6 +5,9 @@ var express = require('express'),
 // TEMPLATE ENGINE
 var hbs = require('hbs');
 
+// CSS bootstrap
+var bootstrap = require('bootstrap');
+
 // MONGODB
 var Db = require('mongodb').Db;
 var Server = require('mongodb').Server;
