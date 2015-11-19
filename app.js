@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('html', require('hbs').__express);
-app.set('views', __dirname + '/views/html');
+app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 
 app.use('/', routes);
