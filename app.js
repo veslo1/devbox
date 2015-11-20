@@ -18,7 +18,7 @@ res.send('Hello World');
 });
 
 app.get('/test', function(req, res) {
-  res.send('index.html');
+  res.sendFile('index.html');
 });
 
 // SERVER - START
