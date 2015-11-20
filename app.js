@@ -10,8 +10,7 @@ var Server = require('mongodb').Server;
 // EXPRESS - CONFIGURATION
 var app = express();
 app.listen(80);
-app.set('views', path.join(__dirname, 'public'));
-app.set('view engine', 'html');
+app.use(express.static( path.join(__dirname, 'public')));
 
 // EXPRESS - ROUTES
 app.get('/', function(req, res) {
@@ -19,7 +18,7 @@ res.send('Hello World');
 });
 
 app.get('/test', function(req, res) {
-  res.render('index.html');
+  res.sendfile('index.html');
 });
 
 // http.createServer(app).listen(app.get('port'), function() {
