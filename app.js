@@ -1,6 +1,5 @@
 // MODULES
 var express = require('express');
-var http = require('http');
 var path = require('path');
 
 // MODULE - MONGODB
