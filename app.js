@@ -18,7 +18,7 @@ res.send('Hello World');
 });
 
 app.get('/test', function(req, res) {
-  res.sendfile('index.html');
+  res.sendFile('index.html');
 });
 
 // http.createServer(app).listen(app.get('port'), function() {
