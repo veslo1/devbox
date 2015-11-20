@@ -1,14 +1,14 @@
-// MODULES - EXPRESS
-var express = require('express'),
-http = require('http');
-
-var app = express();
+// MODULES
+var express = require('express');
+var http = require('http');
+var path = require('path');
 
 // MODULE - MONGODB
 var Db = require('mongodb').Db;
 var Server = require('mongodb').Server;
 
 // EXPRESS - CONFIGURATION
+var app = express();
 app.listen(80);
 
 // EXPRESS - ROUTES
