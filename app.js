@@ -10,6 +10,8 @@ var Server = require('mongodb').Server;
 // EXPRESS - CONFIGURATION
 var app = express();
 app.listen(80);
+app.set('views', path.join(__dirname, 'public'));
+app.set('view engine', 'html');
 
 // EXPRESS - ROUTES
 app.get('/', function(req, res) {
