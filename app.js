@@ -12,7 +12,7 @@ app.listen(80);
 // app.use(express.static( path.join(__dirname, 'public')));
 
 // EXPRESS - ROUTES
-var html_dir = './public/';
+var html_dir = '/var/www/devbox/public/';
 
 app.get('/', function(req, res) {
 res.send('Hello World');
