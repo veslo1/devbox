@@ -22,7 +22,7 @@ app.get('/test', function(req, res) {
   res.sendFile(html_dir + 'index.html');
 });
 
-app.get('/test', function(req, res) {
+app.get('/remark', function(req, res) {
   res.sendFile(html_dir + 'static/resources/remark/classic/mmenu/html/apps/media/overview.html');
 });
 
