@@ -22,5 +22,9 @@ app.get('/test', function(req, res) {
   res.sendFile(html_dir + 'index.html');
 });
 
+app.get('/test', function(req, res) {
+  res.sendFile(html_dir + 'static/resources/remark/classic/mmenu/html/apps/media/overview.html');
+});
+
 // SERVER - START
 module.exports = app;
