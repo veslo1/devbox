@@ -9,7 +9,7 @@ var Server = require('mongodb').Server;
 // EXPRESS - CONFIGURATION
 var app = express();
 app.listen(81);
-// app.use(express.static( path.join(__dirname, 'public')));
+app.use(express.static( path.join(__dirname, 'public')));
 
 // EXPRESS - ROUTES
 var html_dir = '/var/www/devbox/public/';
