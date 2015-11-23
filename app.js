@@ -8,7 +8,7 @@ var Server = require('mongodb').Server;
 
 // EXPRESS - CONFIGURATION
 var app = express();
-app.listen(81);
+app.listen(80);
 app.use(express.static( path.join(__dirname, 'public')));
 
 // EXPRESS - ROUTES
