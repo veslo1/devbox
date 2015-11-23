@@ -23,7 +23,11 @@ app.get('/test', function(req, res) {
 });
 
 app.get('/remark', function(req, res) {
-  res.sendFile(html_dir + 'resources/remark/index.html');
+  res.sendFile(html_dir + '/remark2');
+});
+
+app.get('/remark2', function(req, res) {
+  res.sendFile(html_dir + 'resources/remark/classic/mmenu/html/index.html');
 });
 
 // SERVER - START
