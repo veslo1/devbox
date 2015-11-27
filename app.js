@@ -22,8 +22,8 @@ app.get('/test', function(req, res) {
   res.sendFile(html_dir + 'index.html');
 });
 
-app.get('/remark', function(req, res) {
-  res.sendFile(html_dir + 'resources/remark/classic/mmenu/html/apps/media/overview.html');
+app.get('/login', function(req, res) {
+  res.sendFile(html_dir + 'resources/remark/classic/base/html/index.html');
 });
 
 // SERVER - START
