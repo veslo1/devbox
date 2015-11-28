@@ -16,7 +16,7 @@ var html_dir = '/var/www/devbox/public/';
 var html_dir_base = '/var/www/devbox/';
 
 app.get('/', function(req, res) {
-res.send('Hello World');
+  res.sendFile(html_dir_base + 'base/html/pages/maintenance.html');
 });
 
 app.get('/test', function(req, res) {
