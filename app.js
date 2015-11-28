@@ -13,7 +13,7 @@ app.use('/static', express.static(__dirname + '/public'));
 
 // EXPRESS - ROUTES
 var html_dir = '/var/www/devbox/public/';
-var html_dir_base = '/var/www/devbox/public/base/html/pages/'
+var html_dir_base = '/var/www/devbox/';
 
 app.get('/', function(req, res) {
 res.send('Hello World');
@@ -24,7 +24,7 @@ app.get('/test', function(req, res) {
 });
 
 app.get('/login', function(req, res) {
-  res.sendFile('base/html/pages/login-v3.html');
+  res.sendFile(html_dir_base + 'base/html/pages/login-v3.html');
 });
 
 // SERVER - START
