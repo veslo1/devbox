@@ -23,7 +23,7 @@ app.get('/test', function(req, res) {
 });
 
 app.get('/login', function(req, res) {
-  res.sendFile(html_dir + 'resources/remark/classic/base/html/index.html');
+  res.sendFile(html_dir + 'base/html/pages/login-v3.html');
 });
 
 // SERVER - START
