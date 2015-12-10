@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 
 // MODULE - MONGODB
-var Db = require('mongodb').Db;
-var Server = require('mongodb').Server;
+//var Db = require('mongodb').Db;
+//var Server = require('mongodb').Server;
 
 // MODULE - PASSPORTJS
 var passport = require('passport');
@@ -24,11 +24,11 @@ app.use(passport.session());
 mongoose.connect('mongodb://localhost/appDB');
 var Schema = mongoose.Schema;
 var UserDetail = new Schema({
-      username: String,
-      password: String
-    }, {
-      collection: 'userInfo'
-    });
+  username: String,
+  password: String
+}, {
+  collection: 'userInfo'
+});
 var UserDetails = mongoose.model('userInfo', UserDetail);
 
 // CONFIGURATION - PASSPORT
