@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // CONFIGURATION - MONGOOSE
-mongoose.connect('mongodb://127.0.0.1/appDB');
+mongoose.connect('mongodb://localhost/appDB');
 var Schema = mongoose.Schema;
 var UserDetail = new Schema({
       username: String,
