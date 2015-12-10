@@ -17,6 +17,7 @@ var mongoose = require('mongoose');
 var app = express();
 app.listen(80);
 app.use('/static', express.static(__dirname + '/public'));
+app.use(express.methodOverride());
 app.use(passport.initialize());
 app.use(passport.session());
 
