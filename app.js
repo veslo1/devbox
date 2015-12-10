@@ -19,6 +19,7 @@ app.listen(80);
 app.use('/static', express.static(__dirname + '/public'));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(app.router);
 
 // CONFIGURATION - MONGOOSE
 mongoose.connect('mongodb://127.0.0.1/appDB');
