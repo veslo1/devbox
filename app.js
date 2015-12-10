@@ -81,6 +81,7 @@ app.get('/login', function(req, res) {
 // EXPRESS - ROUTES - PASSPORT
 app.post('/login',
   passport.authenticate('local', {
+    console.log(results);
     successRedirect: '/loginSuccess',
     failureRedirect: '/loginFailure'
   })
