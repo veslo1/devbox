@@ -11,7 +11,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
 // MODULE - MONGOOSE
-var mongoose = require('mongoose/');
+var mongoose = require('mongoose');
 
 // CONFIGURATION - EXPRESS
 var app = express();
