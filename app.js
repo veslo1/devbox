@@ -16,15 +16,11 @@ var html_dir = '/var/www/devbox/public/';
 var html_dir_base = '/var/www/devbox/';
 
 app.get('/', function(req, res) {
-  res.sendFile(html_dir_base + 'base/html/pages/maintenance.html');
-});
-
-app.get('/test', function(req, res) {
-  res.sendFile(html_dir + 'index.html');
+  res.sendFile('base/html/pages/maintenance.html',  { root: __dirname });
 });
 
 app.get('/login', function(req, res) {
-  res.sendFile(html_dir_base + 'base/html/pages/login-v3.html');
+  res.sendFile('base/html/pages/login-v3.html',  { root: __dirname });
 });
 
 // SERVER - START
