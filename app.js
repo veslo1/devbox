@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // CONFIGURATION - MONGOOSE
-mongoose.connect('mongodb://localhost/appDB');
+mongoose.connect('mongodb://127.0.0.1/appDB');
 var Schema = mongoose.Schema;
 var UserDetail = new Schema({
       username: String,
@@ -81,7 +81,6 @@ app.get('/login', function(req, res) {
 // EXPRESS - ROUTES - PASSPORT
 app.post('/login',
   passport.authenticate('local', {
-    console.log(results);
     successRedirect: '/loginSuccess',
     failureRedirect: '/loginFailure'
   })
