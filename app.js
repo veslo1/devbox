@@ -1,23 +1,14 @@
-// MODULES - EXPRESS
+// MODULES
 var express = require('express');
 var path = require('path');
-
-// MODULE - MONGODB
-//var Db = require('mongodb').Db;
-//var Server = require('mongodb').Server;
-
-// MODULE - PASSPORTJS
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
-// MODULE - MONGOOSE
 var mongoose = require('mongoose');
 
 // CONFIGURATION - EXPRESS
 var app = express();
 app.listen(80);
 app.use('/static', express.static(__dirname + '/public'));
-app.use(express.methodOverride());
 app.use(passport.initialize());
 app.use(passport.session());
 
